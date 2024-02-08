@@ -1,0 +1,621 @@
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerRegular.woff2') format('woff2'),
+    url('../fonts/MullerRegular.woff') format('woff');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerLight.woff2') format('woff2'),
+    url('../fonts/MullerLight.woff') format('woff');
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerMedium.woff2') format('woff2'),
+    url('../fonts/MullerMedium.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muller';
+  src: url('../fonts/MullerBold.woff2') format('woff2'),
+    url('../fonts/MullerBold.woff') format('woff');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Muller';
+	background-color: #f1f1f1;
+}
+
+a {
+	text-decoration: none;
+}	
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+/* HEADER */
+
+.header {
+}
+
+.header-top {
+	display: flex;
+	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	min-height: 54px;
+}
+
+.logo {
+	/* width: 260px;
+	height: 54px; */
+	border-radius: 15px;
+}
+.logo-img {
+	padding-top: 7px;
+	padding-bottom: 7px;
+	padding-left: 20px;
+}
+.tel {
+	margin-left: 40px;
+	margin-right: auto;
+}
+
+.tel-nmb {
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 500;
+	color: #666666;
+}
+
+.personal-acc {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.personal-acc-link {
+	margin-left: 5px;
+	color: #c93;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
+}
+
+.personal-acc-icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background-image: url('../img/keyboard_tab.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	transform: translateY(-1px);
+}
+
+
+.header-bottom {
+
+}
+.header-bottom-container {
+	display: flex;
+	align-items: center;
+	padding: 14px 45px;
+	background-color: #FFF;
+	border-radius: 15px;
+}
+.header-bottom-left {
+	display: flex;
+}
+.nav-list {
+	display: flex;
+}
+
+.nav-list-item {
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
+	white-space: nowrap;
+	color: #666666;
+}
+
+.nav-list-item:not(:last-child) {
+	margin-right: 45px;
+}
+.header-bottom-right {
+	display: flex;
+	align-self: flex-end;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
+}
+.want-tour {
+	margin-left: 114px;
+	margin-right: 40px;
+	padding: 13px 20px;
+	border: 1px solid #c93;
+	border-radius: 10px;
+}
+.want-tour-link {
+	color: #CC9933;
+}
+.back-call {
+	padding: 13px 20px;
+	border: 1px solid #c93;
+	border-radius: 10px;
+}
+.back-call-link {
+	color: #CC9933;
+}
+
+
+
+
+/* SPECIAL OFFERS */
+
+
+.special-offers {
+	margin-top: 70px;
+}
+
+.section-title {
+	margin-bottom: 20px;
+	padding-left: 40px;
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: 400;
+	color: #333;
+}
+
+.special-offers-container {
+
+}
+
+.special-offers-tours-list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 540px;
+}
+
+.special-offers-tours-item {
+	flex-grow: 1;
+	padding: 40px 100px 40px 45px;
+	width: calc( (100% - 24px) / 2	);
+	border-radius: 15px;
+}
+.special-offers-tours-item:not(:last-child) {
+	margin-right: 24px;
+}
+
+.special-offers-tours-item:first-child {
+	margin-bottom: 24px;
+	background: url('../img/darken.png'), url('../img/Maldives.png') no-repeat;
+	background-size: cover;
+}
+
+.special-offers-tours-item:nth-child(2) {
+	background: url('../img/darken.png'), url('../img/Crete.png') no-repeat;
+	background-size: cover;
+}
+
+.special-offers-tours-item:nth-child(3) {
+	flex-grow: 1;
+	padding: 210px 225px 45px 40px;
+	background: url('../img/Lux.png') no-repeat;
+	background-size: cover;
+}
+
+
+.special-offers-tours-item-title {
+	padding-bottom: 15px;
+	max-width: 420px;
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: 700;
+	color: #FFFFFF;
+}
+.special-offers-tours-item-price {
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+.special-offers-tours-item-more-info {
+	display: inline-block;
+	margin-top: 38px;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #F0BF5F;
+}
+
+.special-offers-tours-item-arrow-icon {
+	display: inline-block;
+	margin-left: 2px;
+	width: 11px;
+	height: 18px;
+	background: url('../img/Arrow-right.svg') center center no-repeat;
+	background-size: contain;
+	background-color: transparent;
+	transform: translateY(+5px);
+}
+
+
+.special-offers-right-title {
+	max-width: 300px;
+	font-size: 60px;
+	line-height: 60px;
+	font-weight: 700;
+	color: #FFFFFF;
+}
+.special-offers-right-price {
+	margin-top: 15px;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+/* ABOUT US */
+
+
+.about-us {
+	margin-top: 70px;
+}
+.about-us-container {
+	margin-left: 0;
+	max-width: 890px;
+}
+.section-title {
+}
+.about-us-text {
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 400;
+}
+
+
+/* SERVICES */
+
+
+.section-services {
+	margin-top: 70px;
+}
+.section-title {
+}
+.services-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+.services-list-item {
+	flex: 1 1 45%;
+	border-radius: 15px;
+	min-height: 330px;
+}
+
+.services-list-item:nth-child(odd) {
+	margin-right: 24px;
+}
+
+.services-list-item:nth-child(1) {
+	margin-bottom: 24px;
+}
+
+.services-list-item:nth-child(2) {
+	margin-bottom: 24px;
+}
+
+.item-img {
+	background: center top no-repeat;
+	background-size: 100% 165px;
+	background-color: #FFF;
+}
+
+.img-exclusive {
+	background-image: url('../img/Exclusive-service.png');
+}
+
+.img-rent {
+	background-image: url('../img/Rent-of-banquet-halls.png');
+}
+
+.img-sauna {
+	background-image: url('../img/Saunas.png');
+}
+
+.img-parking {
+	background-image: url('../img/Parking.png	');
+}
+
+.services-list-item-text {
+	margin: 191px 126px 35px 45px;
+}
+
+.services-list-item-title {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 40px;
+	color: #CC9933;
+}
+
+.services-list-item-icon-arrow {
+	display: inline-block;
+	margin-left: 3px;
+	width: 11px;
+	height: 18px;
+	background: url('../img/Arrow-right.svg') center center no-repeat;
+	background-size: contain;
+	background-color: transparent;
+	transform: translateY(+3px);
+}
+
+.services-list-item-description {
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 400;
+}
+
+
+/* ADVANTAGES */
+
+
+.section-advantages {
+	margin-top: 70px;
+}
+.section-title {
+}
+.advantages-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+.advantages-list-item {
+	flex: 1 1 20%;
+	margin-right: 22px;
+	margin-bottom: 22px;
+	border-radius: 15px;
+	background-color: #FFF;
+}
+
+.advantages-list-item:nth-child(4n) {
+	margin-right: 0;
+}
+
+.advantages-list-item-icon {
+	margin-top: 40px;
+	margin-left: 45px;
+	margin-bottom: 10px;
+	width: 68px;
+	height: 66px;
+	background: left top transparent no-repeat;
+	background-size: contain;
+}
+
+.icon-bathtub {
+	background-image: url('../img/bathtub-icon.svg');
+}
+.icon-hanger {
+	background-image: url('../img/hanger-icon.svg');
+}
+.icon-heating {
+	background-image: url('../img/heating-icon.svg');
+}
+.icon-key {
+	background-image: url('../img/hotel-key-icon.svg');
+}
+.icon-parking {
+	background-image: url('../img/parking-icon.svg');
+}
+.icon-reception {
+	background-image: url('../img/reception-icon.svg');
+}
+.icon-box {
+	background-image: url('../img/security-box-icon.svg');
+}
+.icon-pool {
+	background-image: url('../img/swimming-pool-icon.svg');
+}
+
+
+.advantages-list-item-text {
+	margin: auto 42px 32px 45px;
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 400;
+}
+
+
+/* ACCOMODATION */
+
+
+.section-accomodation {
+}
+.section-title {
+}
+.accomodation-list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+.accomodation-list-item {
+	flex: 1 1 30%;
+	margin-right: 24px;
+	margin-bottom: 24px;
+	min-height: 440px;
+	border-radius: 15px;
+	background-color: #fff;
+}
+
+.accomodation-list-item:nth-child(3n) {
+	margin-right: 0;
+}
+.accomodation-list-item-img {
+	width: 100%;
+	height: 217px;
+	background: center top no-repeat;
+	background-size: contain;
+}
+
+.accomodation-list-item-last-img {
+	background: center top no-repeat;
+	background-size: 100% 100%;
+}
+
+.accomodation-img-1 {
+	background-image: url('../img/hotel-1.png');
+}
+.accomodation-img-2 {
+	background-image: url('../img/hotel-2.png');
+}
+.accomodation-img-3 {
+	background-image: url('../img/hotel-3.png');
+}
+.accomodation-img-4 {
+	background-image: url('../img/hotel-4.png');
+}
+.accomodation-img-5 {
+	background-image: url('../img/hotel-5.png');
+}
+.accomodation-img-6 {
+	background-image: url('../img/hotel-6.png');
+}
+.accomodation-img-7 {
+	background-image: url('../img/hotel-7.png');
+}
+.accomodation-img-8 {
+	background-image: url('../img/hotel-8.png');
+}
+.accomodation-img-9 {
+	background-image: url('../img/hotel-9.png');
+}
+
+.accomodation-list-item-bottom-container {
+	margin-top: 32px;
+	margin-left: 45px;
+	margin-right: 45px;
+}
+.accomodation-list-item-price-block {
+	display: flex;
+	align-items: end;
+}
+.price-from {
+	margin-right: 4px;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #999;
+}
+.accomodation-list-item-price {
+	margin-right: 10px;
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 700;
+	color: #000;
+}
+
+.per-night-text {
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #000;
+}
+
+.accomodation-list-item-rating {
+	margin-right: 0;
+	margin-left: auto;
+}
+.accomodation-list-item-name {
+	margin-top: 16px;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #000;
+}
+.accomodation-list-item-location {
+	margin-top: 16px;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #999;
+}
+.accomodation-list-item-btn {
+	display: inline-block;
+	margin-top: 20px;
+	margin-bottom: 45px;
+	padding: 13px 20px;
+	border: 1px solid #c93;
+	border-radius: 10px;
+}
+
+.accomodation-list-item-link {
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #CC9933;
+}
+
+.accomodation-list-item:last-child {
+	display: flex;
+	align-items: end;
+	background: url(../img/hotel-9.png) no-repeat;
+	background-size: contain;
+}
+
+.accomodation-list-item-last-more {
+	margin-left: 54px;
+	margin-bottom: 27px;
+}
+
+.accomodation-list-item-last-link {
+	font-size: 20px;
+	line-height: 40px;
+	font-weight: 500;
+	color: #fff;
+}
+
+.arrow-right-white-icon {
+	display: inline-block;
+	margin-left: 2px;
+	width: 11px;
+	height: 18px;
+	background: url('../img/arrow-right-white.svg') center center no-repeat;
+	background-size: contain;
+	background-color: transparent;
+	transform: translateY(+3px);
+}
